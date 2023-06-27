@@ -51,13 +51,13 @@ const ShippingAddress = () => {
                 touched={touchedFields}
               />
             </div>
-            <Input
+            {/* <Input
               label="Company"
               {...register("shipping_address.company")}
               autoComplete="organization"
               errors={errors}
               touched={touchedFields}
-            />
+            /> */}
             <Input
               label="Address"
               {...register("shipping_address.address_1", {

@@ -19,7 +19,7 @@ const Addresses = () => {
         <div className="bg-gray-900 w-8 h-8 rounded-full text-white flex justify-center items-center text-sm">
           1
         </div>
-        <h2>Shipping address</h2>
+        <h2>Your info</h2>
       </div>
       {isEdit ? (
         <div className="px-8 pb-8">
@@ -46,7 +46,7 @@ const Addresses = () => {
             className="max-w-[200px] mt-6"
             onClick={handleSubmit(setAddresses)}
           >
-            Continue to delivery
+            Continue to options
           </Button>
         </div>
       ) : (

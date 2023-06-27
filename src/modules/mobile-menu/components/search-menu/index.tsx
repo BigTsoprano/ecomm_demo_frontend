@@ -6,6 +6,7 @@ import MobileHits from "@modules/search/components/mobile-hits"
 import SearchBox from "@modules/search/components/search-box"
 import { InstantSearch } from "react-instantsearch-hooks-web"
 
+
 const SearchMenu = () => {
   const {
     screen: [_, setScreen],

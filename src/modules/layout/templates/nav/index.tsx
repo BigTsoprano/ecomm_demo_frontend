@@ -8,6 +8,7 @@ import clsx from "clsx"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import { useEffect, useState } from "react"
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined'
 
 const Nav = () => {
   const { pathname } = useRouter()
@@ -71,15 +72,16 @@ const Nav = () => {
           </div>
 
           <div className="flex items-center h-full">
-            <Link href="/" className="text-xl-semi uppercase">
-              Acme
+            <Link href="/" className="text-xl-semi ">
+              DEMO
             </Link>
           </div>
 
           <div className="flex items-center gap-x-6 h-full flex-1 basis-0 justify-end">
-            <div className="hidden small:flex items-center gap-x-6 h-full">
+            <div  className="hidden small:flex items-center gap-x-6 h-full">
               {process.env.FEATURE_SEARCH_ENABLED && <DesktopSearchModal />}
-              <Link href="/account">
+              <Link style={{display:'flex', alignItems:'center'}} href="/account">
+                <PersonOutlineOutlinedIcon style={{paddingRight:'8px', fontSize:'26px'}}/>
                 Account
               </Link>
             </div>

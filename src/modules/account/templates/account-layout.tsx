@@ -37,7 +37,7 @@ const AccountLayout: React.FC = ({ children }) => {
             </span>
           </div>
           <div>
-            <UnderlineLink href="/customer-service">
+            <UnderlineLink href='https://canna.01ninjas.com/becomeapartner'>
               Customer Service
             </UnderlineLink>
           </div>

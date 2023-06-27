@@ -11,6 +11,8 @@ import { chunk } from "lodash"
 import Link from "next/link"
 import { useRouter } from "next/router"
 import React, { useState } from "react"
+import StoreOutlinedIcon from '@mui/icons-material/StoreOutlined'
+
 
 const DropdownMenu = () => {
   const [open, setOpen] = useState(false)
@@ -31,11 +33,12 @@ const DropdownMenu = () => {
           <>
             <Link href="/shop" className="relative flex h-full" passHref>
               <Popover.Button
+              style={{display:'flex', alignItems:'center'}}
                 className={clsx(
                   "relative h-full flex items-center transition-all ease-out duration-200"
                 )}
                 onClick={() => push("/store")}
-              >
+              ><StoreOutlinedIcon style={{paddingRight:'8px', fontSize:'26px'}}/>
                 Store
               </Popover.Button>
             </Link>
@@ -58,7 +61,7 @@ const DropdownMenu = () => {
                   <div className="flex items-start content-container">
                     <div className="flex flex-col flex-1 max-w-[30%]">
                       <h3 className="text-base-semi text-gray-900 mb-4">
-                        Collections
+                        Categories
                       </h3>
                       <div className="flex items-start">
                         {collections &&

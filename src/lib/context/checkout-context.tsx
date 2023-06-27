@@ -25,7 +25,7 @@ import { useStore } from "./store-context"
 type AddressValues = {
   first_name: string
   last_name: string
-  company: string
+  // company: string
   address_1: string
   address_2: string
   city: string
@@ -260,7 +260,7 @@ export const CheckoutProvider = ({ children }: CheckoutProviderProps) => {
       phone: address.phone || "",
       postal_code: address.postal_code || "",
       province: address.province || "",
-      company: address.company || "",
+      // company: address.company || "",
     })
   }
 
@@ -397,10 +397,10 @@ const mapFormValues = (
         cart?.shipping_address?.province ||
         customerShippingAddress?.province ||
         "",
-      company:
-        cart?.shipping_address?.company ||
-        customerShippingAddress?.company ||
-        "",
+      // company:
+      //   cart?.shipping_address?.company ||
+      //   customerShippingAddress?.company ||
+      //   "",
       postal_code:
         cart?.shipping_address?.postal_code ||
         customerShippingAddress?.postal_code ||
@@ -434,12 +434,12 @@ const mapFormValues = (
         cart?.shipping_address?.province ||
         customerBillingAddress?.province ||
         "",
-      company:
-        cart?.billing_address?.company || customerBillingAddress?.company || "",
-      postal_code:
-        cart?.billing_address?.postal_code ||
-        customerBillingAddress?.postal_code ||
-        "",
+      // company:
+      //   cart?.billing_address?.company || customerBillingAddress?.company || "",
+      // postal_code:
+      //   cart?.billing_address?.postal_code ||
+      //   customerBillingAddress?.postal_code ||
+      //   "",
       phone:
         cart?.billing_address?.phone || customerBillingAddress?.phone || "",
     },

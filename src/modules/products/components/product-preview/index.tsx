@@ -11,9 +11,9 @@ const ProductPreview = ({
 }: ProductPreviewType) => {
   return (
     <Link href={`/products/${handle}`}>
-      <div>
+      <div className="transition ease-in-out delay-50 hover:shadow-lg hover:bg-green-100">
         <Thumbnail thumbnail={thumbnail} size="full" />
-        <div className="text-base-regular mt-2">
+        <div style={{paddingLeft:'10px'}} className="text-base-regular mt-2">
           <span>{title}</span>
           <div className="flex items-center gap-x-2 mt-1">
             {price ? (

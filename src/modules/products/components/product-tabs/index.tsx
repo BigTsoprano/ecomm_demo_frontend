@@ -6,6 +6,7 @@ import FastDelivery from "@modules/common/icons/fast-delivery"
 import Refresh from "@modules/common/icons/refresh"
 import clsx from "clsx"
 import { useMemo } from "react"
+import GppMaybeIcon from '@mui/icons-material/GppMaybe';
 
 type ProductTabsProps = {
   product: PricedProduct
@@ -63,23 +64,23 @@ const ProductInfoTab = ({ product }: ProductTabsProps) => {
       <div className="grid grid-cols-2 gap-x-8">
         <div className="flex flex-col gap-y-4">
           <div>
-            <span className="font-semibold">Material</span>
+            <span className="font-semibold">Strain</span>
             <p>{product.material ? product.material : "-"}</p>
           </div>
-          <div>
+          {/* <div>
             <span className="font-semibold">Country of origin</span>
             <p>{product.origin_country ? product.origin_country : "-"}</p>
-          </div>
+          </div> */}
           <div>
-            <span className="font-semibold">Type</span>
+            <span className="font-semibold">Genetics</span>
             <p>{product.type ? product.type.value : "-"}</p>
           </div>
         </div>
         <div className="flex flex-col gap-y-4">
-          <div>
+          {/* <div>
             <span className="font-semibold">Weight</span>
             <p>{product.weight ? `${product.weight} g` : "-"}</p>
-          </div>
+          </div> */}
           <div>
             <span className="font-semibold">Dimensions</span>
             <p>
@@ -104,16 +105,15 @@ const ShippingInfoTab = () => {
     <Tab.Panel className="text-small-regular py-8">
       <div className="grid grid-cols-1 gap-y-8">
         <div className="flex items-start gap-x-2">
-          <FastDelivery />
+          <GppMaybeIcon />
           <div>
-            <span className="font-semibold">Fast delivery</span>
+            <span className="font-semibold">No returns</span>
             <p className="max-w-sm">
-              Your package will arrive in 3-5 business days at your pick up
-              location or in the comfort of your home.
+              Only accepting returns for damaged or defective products. Must return within 24hrs of purchase.
             </p>
           </div>
         </div>
-        <div className="flex items-start gap-x-2">
+        {/* <div className="flex items-start gap-x-2">
           <Refresh />
           <div>
             <span className="font-semibold">Simple exchanges</span>
@@ -133,7 +133,7 @@ const ShippingInfoTab = () => {
               is hassle-free.
             </p>
           </div>
-        </div>
+        </div> */}
       </div>
     </Tab.Panel>
   )
