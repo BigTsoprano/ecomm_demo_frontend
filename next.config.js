@@ -11,6 +11,7 @@ module.exports = withStoreConfig({
     "medusa-server-ninjas.s3.amazonaws.com",
     "https://cms.01ninjas.com",
     "https://demo.01ninjas.com",
+    "https://medusa-server-ninjas.s3.us-east-1.amazonaws.com"
 
   ],
   },
@@ -26,14 +27,14 @@ module.exports = withStoreConfig({
 
 
 
-module.exports = {
-  typescript: {
-    // !! WARN !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARN !!
-    ignoreBuildErrors: true,
-  },
-};
+// module.exports = {
+//   typescript: {
+//     // !! WARN !!
+//     // Dangerously allow production builds to successfully complete even if
+//     // your project has type errors.
+//     // !! WARN !!
+//     ignoreBuildErrors: true,
+//   },
+// };
 
 console.log("next.config.js", JSON.stringify(module.exports, null, 2))
