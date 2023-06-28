@@ -29,7 +29,7 @@ const FooterCTA = () => {
           </div>
         </div>
 
-        <div className="relative w-full aspect-square small:w-[35%] small:aspect-[28/36]">`
+        <div className="relative w-full aspect-square small:w-[35%] small:aspect-[28/36]">
         <Swiper {...swiperParameters} className="swiper">
         <SwiperSlide className="swiper-slide">
   <img
