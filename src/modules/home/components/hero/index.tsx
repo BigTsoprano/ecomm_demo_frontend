@@ -39,6 +39,8 @@ const Hero = () => {
         }}
         streamType="on-demand"
         preferPlayback="mse"
+        nonce="some value"
+
         autoPlay
       muted
       playsInline
