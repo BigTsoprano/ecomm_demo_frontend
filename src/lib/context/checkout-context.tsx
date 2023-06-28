@@ -436,10 +436,10 @@ const mapFormValues = (
         "",
       // company:
       //   cart?.billing_address?.company || customerBillingAddress?.company || "",
-      // postal_code:
-      //   cart?.billing_address?.postal_code ||
-      //   customerBillingAddress?.postal_code ||
-      //   "",
+      postal_code:
+        cart?.billing_address?.postal_code ||
+        customerBillingAddress?.postal_code ||
+        "",
       phone:
         cart?.billing_address?.phone || customerBillingAddress?.phone || "",
     },
