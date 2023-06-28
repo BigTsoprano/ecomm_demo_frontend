@@ -63,7 +63,7 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({ customer }) => {
   const [
     firstName,
     lastName,
-    company,
+    // company,
     address1,
     address2,
     city,
@@ -75,7 +75,7 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({ customer }) => {
     name: [
       "billing_address.first_name",
       "billing_address.last_name",
-      "billing_address.company",
+      // "billing_address.company",
       "billing_address.address_1",
       "billing_address.address_2",
       "billing_address.city",
@@ -115,7 +115,7 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({ customer }) => {
           {customer.billing_address.first_name}{" "}
           {customer.billing_address.last_name}
         </span>
-        <span>{customer.billing_address.company}</span>
+        {/* <span>{customer.billing_address.company}</span> */}
         <span>
           {customer.billing_address.address_1}
           {customer.billing_address.address_2
@@ -162,12 +162,12 @@ const ProfileBillingAddress: React.FC<MyInformationProps> = ({ customer }) => {
               errors={errors}
             />
           </div>
-          <Input
+          {/* <Input
             label="Company"
             {...register("billing_address.company")}
             defaultValue={company}
             errors={errors}
-          />
+          /> */}
           <Input
             label="Address"
             {...register("billing_address.address_1", { required: true })}
@@ -224,7 +224,7 @@ const mapBillingAddressToFormData = ({ customer }: MyInformationProps) => {
     billing_address: {
       first_name: customer.billing_address?.first_name || undefined,
       last_name: customer.billing_address?.last_name || undefined,
-      company: customer.billing_address?.company || undefined,
+      // company: customer.billing_address?.company || undefined,
       address_1: customer.billing_address?.address_1 || undefined,
       address_2: customer.billing_address?.address_2 || undefined,
       city: customer.billing_address?.city || undefined,
