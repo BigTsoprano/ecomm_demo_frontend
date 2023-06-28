@@ -10,30 +10,30 @@ module.exports = withStoreConfig({
     "localhost",
     "medusa-server-ninjas.s3.amazonaws.com",
     "https://cms.01ninjas.com",
-    "https://demo.01ninjas.com"
+    "https://demo.01ninjas.com",
 
   ],
   },
 })
 
-module.exports = {
-  projectConfig: {
-    // ...other configurations
-    store_cors: process.env.STORE_CORS.split(","),
-  },
-};
+// module.exports = {
+//   projectConfig: {
+//     // ...other configurations
+//     store_cors: process.env.STORE_CORS.split(","),
+//   },
+// };
 
 
 
 
-module.exports = {
-  typescript: {
-    // !! WARN !!
-    // Dangerously allow production builds to successfully complete even if
-    // your project has type errors.
-    // !! WARN !!
-    ignoreBuildErrors: true,
-  },
-};
+// module.exports = {
+//   typescript: {
+//     // !! WARN !!
+//     // Dangerously allow production builds to successfully complete even if
+//     // your project has type errors.
+//     // !! WARN !!
+//     ignoreBuildErrors: true,
+//   },
+// };
 
 console.log("next.config.js", JSON.stringify(module.exports, null, 2))
