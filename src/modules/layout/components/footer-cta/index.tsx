@@ -16,7 +16,7 @@ const FooterCTA = () => {
     autoplay: { enabled: true, disableOnInteraction: false, delay: 9000 },
     speed: 600,
     loop: true,
-    direction: "horizontal",
+  
   }
 
   return (

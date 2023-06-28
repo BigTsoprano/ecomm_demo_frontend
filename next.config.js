@@ -11,7 +11,8 @@ module.exports = withStoreConfig({
     "medusa-server-ninjas.s3.amazonaws.com",
     "https://cms.01ninjas.com",
     "https://demo.01ninjas.com",
-    "https://medusa-server-ninjas.s3.us-east-1.amazonaws.com"
+    "https://medusa-server-ninjas.s3.us-east-1.amazonaws.com",
+    "medusa-server-ninjas.s3.us-east-1.amazonaws.com",
 
   ],
   },
