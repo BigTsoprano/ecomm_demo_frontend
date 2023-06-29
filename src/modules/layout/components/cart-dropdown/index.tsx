@@ -25,7 +25,7 @@ const CartDropdown = () => {
         
         <Link href="/cart" passHref>
           
-          <Popover.Button style={{display:'flex', alignItems:'center'}} className="h-full"><ShoppingCartOutlinedIcon style={{fontSize:'24px', paddingRight:'8px'}}/>{`Cart (${totalItems})`}</Popover.Button>
+          <button style={{display:'flex', alignItems:'center'}} className="h-full"><ShoppingCartOutlinedIcon style={{fontSize:'24px', paddingRight:'8px'}}/>{`My cart (${totalItems})`}</button>
         </Link>
         <Transition
           show={state}
