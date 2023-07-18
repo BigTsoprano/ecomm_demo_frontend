@@ -55,7 +55,7 @@ const Cms = () => {
             </div>
         </div>
         <div className="mt-12 lg:mt-0">
-        <Image  width={1000} height={600} style={{width:'100vw'}} src="/cms_img.png" className="w-full shadow-lg rounded-lg border" />
+        <img alt="cms image for canna"  src="/cms_img.png" className="w-full shadow-lg rounded-lg border" />
             </div>
     </div>
 </section>
