@@ -7,7 +7,6 @@ import { ReactElement, ReactNode } from "react"
 export type CollectionData = {
   id: string
   title: string
-  material: string
  
 }
 

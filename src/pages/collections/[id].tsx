@@ -20,7 +20,6 @@ const fetchCollection = async (id: string) => {
   return await medusaClient.collections.retrieve(id).then(({ collection }) => ({
     id: collection.id,
     title: collection.title,
-    material: collection.material,
   }))
 }
 
@@ -76,7 +75,7 @@ const CollectionPage: NextPageWithLayout<PrefetchedPageProps> = ({
   if (isSuccess) {
     return (
       <>
-        <Head title={data.title} description={`${data.title} collection`} material={data.material} />
+        <Head title={data.title} description={`${data.title} collection`}  />
         <CollectionTemplate collection={data} />
       </>
     )
