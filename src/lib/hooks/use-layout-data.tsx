@@ -34,7 +34,6 @@ const fetchCollectionData = async (): Promise<LayoutCollection[]> => {
   return collections.map((c) => ({
     id: c.id,
     title: c.title,
-    material: c.material,
   }))
 }
 
