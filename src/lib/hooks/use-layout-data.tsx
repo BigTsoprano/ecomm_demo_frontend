@@ -10,6 +10,7 @@ import { CalculatedVariant } from "types/medusa"
 type LayoutCollection = {
   id: string
   title: string
+  material: string
 }
 
 const fetchCollectionData = async (): Promise<LayoutCollection[]> => {
@@ -33,6 +34,7 @@ const fetchCollectionData = async (): Promise<LayoutCollection[]> => {
   return collections.map((c) => ({
     id: c.id,
     title: c.title,
+    material: c.material,
   }))
 }
 
@@ -76,6 +78,7 @@ const fetchFeaturedProducts = async (
         id: p.id!,
         title: p.title!,
         handle: p.handle!,
+        material: p.material!,
         thumbnail: p.thumbnail!,
         price: cheapestVariant
           ? {

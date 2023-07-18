@@ -5,6 +5,7 @@ import Layout from "@modules/layout/templates"
 import { ReactElement } from "react"
 import { NextPageWithLayout } from "types/global"
 import Cms from "@modules/home/components/cms"
+import Banner from "@modules/home/components/banner"
 
 const Home: NextPageWithLayout = () => {
   return (
@@ -16,6 +17,7 @@ const Home: NextPageWithLayout = () => {
       <Hero />
       <FeaturedProducts />
       <Cms />
+      <Banner />
     </>
   )
 }

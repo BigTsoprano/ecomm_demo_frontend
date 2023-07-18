@@ -47,6 +47,7 @@ const MobileActions: React.FC<MobileActionsProps> = ({ product, show }) => {
         >
           <div className="bg-white flex flex-col gap-y-3 justify-center items-center text-large-regular p-4 h-full w-full border-t border-gray-200">
             <div className="flex items-center gap-x-2">
+              
               <span>{product.title}</span>
               <span>—</span>
               {selectedPrice ? (

@@ -24,7 +24,7 @@
     "@emotion/styled": "^11.11.0",
     "@headlessui/react": "^1.7.15",
     "@hookform/error-message": "^2.0.0",
-    "@medusajs/medusa-js": "^6.0.0",
+    "@medusajs/medusa-js": "^6.0.2",
     "@meilisearch/instant-meilisearch": "^0.7.1",
     "@mui/icons-material": "^5.11.16",
     "@mui/material": "^5.13.6",

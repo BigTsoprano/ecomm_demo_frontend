@@ -10,10 +10,10 @@ const FeaturedProducts = () => {
     <div className="py-12">
       <div className="content-container py-6">
         <div className="flex flex-col items-center text-center mb-12">
-          <span className="text-base-regular text-gray-600 mb-6">
+          <span className="text-base-regular text-green-600 mb-2">
             Best sellers
           </span>
-          <p className="text-xl-semi">Browse our customer favorites</p>
+          <p className="font-sans text-3xl font-bold tracking-tight text-gray-900 sm:text-4xl sm:leading-none">Browse our customer favorites</p>
           <p className="text-lg-regular text-gray-900 max-w-lg mb-1">
             Our newest styles are here to help you look your best.
           </p>

@@ -57,6 +57,7 @@ const ProductPage: NextPageWithLayout<PrefetchedPageProps> = ({ notFound }) => {
         <Head
           description={data.description}
           title={data.title}
+          material={data.material}
           image={data.thumbnail}
         />
         <ProductTemplate product={data} />

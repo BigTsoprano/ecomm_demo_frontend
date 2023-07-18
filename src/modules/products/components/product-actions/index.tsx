@@ -34,6 +34,7 @@ const ProductActions: React.FC<ProductActionsProps> = ({ product }) => {
           {product.collection.title}
         </Link>
       )}
+      <span className="text-xs text-slate-700">{product.material}</span>
       <h3 className="text-xl-regular">{product.title}</h3>
 
       <p className="text-base-regular">{product.description}</p>

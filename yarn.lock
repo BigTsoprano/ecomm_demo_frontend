@@ -819,10 +819,21 @@
     winston "^3.8.2"
     yargs "^15.3.1"
 
-"@medusajs/medusa-js@^6.0.0", "@medusajs/medusa-js@^6.0.1":
+"@medusajs/medusa-js@^6.0.1":
   version "6.0.1"
   resolved "https://registry.yarnpkg.com/@medusajs/medusa-js/-/medusa-js-6.0.1.tgz#f0cdfab2fe6fe5536376625b52e52bf740aaf14f"
   integrity sha512-7efHlXV1kNE7nJVhYVtT3wEQmBI8XZWHjOe779io428fG4YtIBfcgNxYtUiAeEFN3tKF22kmlcb3Go9Rfj3OvA==
+  dependencies:
+    axios "^0.24.0"
+    cross-env "^5.2.1"
+    qs "^6.10.3"
+    retry-axios "^2.6.0"
+    uuid "^9.0.0"
+
+"@medusajs/medusa-js@^6.0.2":
+  version "6.0.2"
+  resolved "https://registry.yarnpkg.com/@medusajs/medusa-js/-/medusa-js-6.0.2.tgz#51e4aaa3f0b324f2f75d3a703cf0f51457af1ba3"
+  integrity sha512-VmGuFUxV2ztuJn7V4rBH9npQDYY1WB7+EzTbXe2syPkR2SYPjM5/QnpZ+2MQNEHANvoNu1iSdAa2hh3q5BracQ==
   dependencies:
     axios "^0.24.0"
     cross-env "^5.2.1"

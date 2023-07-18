@@ -3,15 +3,19 @@ import { NextPage } from "next"
 import { AppProps } from "next/app"
 import { ReactElement, ReactNode } from "react"
 
+
 export type CollectionData = {
   id: string
   title: string
+  material: string
+ 
 }
 
 export type FeaturedProduct = {
   id: string
   title: string
   handle: string
+material: string
   thumbnail?: string
 }
 
@@ -52,6 +56,7 @@ export type ProductPreviewType = {
   id: string
   title: string
   handle: string | null
+   material: string
   thumbnail: string | null
   price?: {
     calculated_price: string
