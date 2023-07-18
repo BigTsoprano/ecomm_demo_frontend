@@ -13,7 +13,6 @@ type CollectionTemplateProps = {
   collection: {
     id: string
     title: string
-    material: string
   }
 }
 
@@ -64,7 +63,6 @@ const CollectionTemplate: React.FC<CollectionTemplateProps> = ({
   return (
     <div className="content-container py-6">
       <div className="mb-8 text-2xl-semi">
-        <span>{collection.material}</span>
         <h1>{collection.title}</h1>
       </div>
       <ul className="grid grid-cols-2 small:grid-cols-3 medium:grid-cols-4 gap-x-4 gap-y-8">
