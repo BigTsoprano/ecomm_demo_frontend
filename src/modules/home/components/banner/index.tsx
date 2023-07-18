@@ -24,6 +24,8 @@ function banner() {
      viewer_user_id: "user-id-bc-as",
    }}
    streamType="on-demand"
+   nonce="some value"
+
    playsInline
    autoPlay
    muted
