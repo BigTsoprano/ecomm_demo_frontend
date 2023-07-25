@@ -20,7 +20,7 @@ const ProductTabs = ({ product }: ProductTabsProps) => {
         component: <ProductInfoTab product={product} />,
       },
       {
-        label: "Shipping & Returns",
+        label: "Returns",
         component: <ShippingInfoTab />,
       },
     ]

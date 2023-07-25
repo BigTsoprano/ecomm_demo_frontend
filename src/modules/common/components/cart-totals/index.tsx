@@ -45,7 +45,7 @@ const CartTotals: React.FC<CartTotalsProps> = ({ cart }) => {
             </div>
           )}
           <div className="flex items-center justify-between">
-            <span>Shipping</span>
+            <span>vat</span>
             <span>{getAmount(shipping_total)}</span>
           </div>
           <div className="flex items-center justify-between">
